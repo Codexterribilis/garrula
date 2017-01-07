@@ -1,6 +1,6 @@
 "About the application":
 An application of Question-Answering(sub-field Natural Language Processing) using encoder-Decoder RNNs with LSTM-cells + Attention based mechanism(TensorFlow)
-I have a trained model  on Cornell Movie--Dialogs dataset. It works as an interactive chatbot named "Garrula".The model is an "embedding Seq2Seq model" built using Google's [Tensorflow API].
+I have a trained model  on Cornell Movie--Dialogs dataset. It works as an generative chatbot named "Garrula".The model is an "embedding Seq2Seq model" built using Google's [Tensorflow API].
 It is made of LSTM cells, which have an internal cell state that changes as inputs (words in a sentence in our datawrangler/vocab20000) are fed sequentially into the model.  This cell state allows the model to consider the context 
 in which an input is recieved, and the output for a given input depends partially on the inputs that came before.  Our model has 20000 input and output 
 nodes (one for each word in the vocabulary) and 3 hidden layers of 768 nodes each.
