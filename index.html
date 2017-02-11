@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Garrula-An Generative chatbot</title>
+</head>
+<body>
+
+<h1>"About the Application":</h1>
+<p>A generative chatbot is an application of Question-Answering ( a sub-field of Natural Language Processing),implemented using a Encoder-Decoder RNNs with LSTM-cells + Attention based mechanism. The model is an "embedding Seq2Seq model" built using Tensorflow's Python API (A machine learning library). The model was trained on Cornell Movie--Dialogs dataset. The reason behind using LSTM cells is that, they have an internal cell state that changes as inputs (words in a sentence in our datawrangler/vocab20000) are fed sequentially into the model. This cell state allows the model to consider the context in which an input is recieved, and the output for a given input depends partially on the inputs that came before. The model has 20000 input and output nodes (one for each word in the vocabulary) and 3 hidden layers of 768 nodes each.</p>
+<h2>"About Dataset":</h2>
+<p>Cornell Movie--Dialogs dataset contains conversational reponses(304,713 utterances) exchanged between 9,035 characters from 617 movies. These conversational responses mimics a Question-Answering pattern which is used to build a chatbot.</p>
+</body>
+</html>
