@@ -1,7 +1,7 @@
-Garrula: A generative chatbot is an application of Question-Answering ( a sub-field of Natural Language Processing),implemented using a Encoder-Decoder RNNs with LSTM-cells + Attention based mechanism. The model is an "embedding Seq2Seq model" built using Tensorflow's Python API (A machine learning library). The model was trained on Cornell Movie--Dialogs dataset. The reason behind using LSTM cells is that, they have an internal cell state that changes as inputs (words in a sentence in our datawrangler/vocab20000) are fed sequentially into the model. This cell state allows the model to consider the context in which an input is recieved, and the output for a given input depends partially on the inputs that came before. The model has 20000 input and output nodes (one for each word in the vocabulary) and 3 hidden layers of 768 nodes each.
+Garrula: A generative chatbot is an application of Question-Answering ( a subfield of Natural Language Processing), implemented using Encoder-Decoder RNNs with LSTM-cells + Attention based mechanism. The model is an "embedding Seq2Seq model" built using Tensorflow's Python API (A machine learning library). The model has been trained on Cornell Movie--Dialogs dataset. The reason behind using LSTM cells is that, they have an internal cell state that changes as inputs (words in a sentence in our data wrangler/vocab20000) are fed sequentially into the model. This cell state allows the model to consider the context in which an input is received, and the output for a given input depends partially on the inputs that came before. The model has 20000 input and output nodes (one for each word in the vocabulary) and 3 hidden layers of 768 nodes each.
 
 "About Dataset":
-Cornell Movie--Dialogs dataset contains conversational reponses(304,713 utterances) exchanged between 9,035 characters from 617 movies. These conversational responses mimics a Question-Answering pattern which is used to build a chatbot.
+Cornell Movie--Dialogs dataset contains conversational responses(304,713 utterances) exchanged between 9,035 characters from 617 movies. These conversational responses mimic a Question-Answering pattern which is used to build a chatbot.
 
 "What's happening in the code":
 Garrula is building a lexicon of 20,000 most common words in the entire dataset.
@@ -9,12 +9,12 @@ Garrula is building a lexicon of 20,000 most common words in the entire dataset.
 
 "Installation & dependencies required":
 1.  Install Tensorflow from https://www.tensorflow.org/versions/r0.12/get_started/os_setup.html 
-    according to the system requirement(CPU version or GPU verison).
+    according to the system requirement(CPU version or GPU version).
 2.  Install the following dependencies:
     python 2.7
     tensorflow (tested with v0.11.0)
     numpy(package for scientific computing with python)
-    CUDA (for using gpu, see TensorFlow installation page for more details)
+    CUDA (for using GPU, see TensorFlow installation page for more details)
     cuDNN(a GPU-accelerated library of primitives for deep neural networks)
     nltk (natural language toolkit for tokenizing the sentences)
     tqdm(Loops with a visual progress-meter.)
@@ -23,13 +23,13 @@ Garrula is building a lexicon of 20,000 most common words in the entire dataset.
 
 To train the model:
 1. Set mode ="train" in configuration file setModelParams.rc.
-2. Delete the content of checkpoint folder so that it can do a fresh start. If not deleted, then the program will pickup the latest checkpoint file and start training from it.
-3. run garrula.py on command line. (python garrula.py)
+2. Delete the content of checkpoint folder so that it can do a fresh start. If not deleted, then the program will pick up the latest checkpoint file and start training from it.
+3. run garrula.py on the command line. (python garrula.py)
 
 To test the model:
 1. Set mode="test" in configuration file setModelParams.rc.
 2. copy the checkpoint_after5day_training/ to checkpoints/ (To get good results, otherwise can be tested from any generated CHECKPOINTS.). 
-3. run garrula.py using command line. (python garrula.py)
+3. run garrula.py using the command line. (python garrula.py)
 
 
 * NOTE:
