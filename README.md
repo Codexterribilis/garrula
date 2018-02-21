@@ -82,3 +82,6 @@ vocab_size VOCAB_SIZE                                                   |Vocabul
 model_type MODEL_TYPE        				                            |encoder_decoder RNN with attention mechanism.
 buckets BUCKETS                                      		           	|Implement the model with buckets                    max_sentence_length  MAX_SENTENCE_LENGTH  	  		                	 |Maximum sentence length for model WITHOUT buckets.
 ************************************************************************************************************************
+
+### Prerequisites:
+Skills in GitHub, bash and Docker are highly recommended. For git & GitHub (this)[https://try.github.io/levels/1/challenges/1] tutorial will help. Managing Docker containers will help to avoid problems with installing lots of libraries as described on (here)[https://hub.docker.com/r/festline/mlcourse_open/] on a Wiki page.
